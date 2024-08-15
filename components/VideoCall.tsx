@@ -11,7 +11,7 @@ const VideoCall = () => {
     const [isVidOn, setIsVidOn] = useState(true)
 
     if (isCallEnded) {
-        return <div className=" mt-5 text-rose-500">Call Ended</div>
+        return <div className=" mt-5 text-rose-500">Ligação Encerrada</div>
     }
 
     if (!localStream && !peer) return;

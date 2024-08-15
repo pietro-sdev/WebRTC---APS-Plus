@@ -16,7 +16,7 @@ const CallNotification = () => {
                     <Avatar src={ongoingCall.participants.caller.profile.imageUrl} />
                     <h3>{ongoingCall.participants.caller.profile.fullName?.split(' ')[0]}</h3>
                 </div>
-                <p className="text-sm mb-2">Incoming Call</p>
+                <p className="text-sm mb-2">Alguém está te ligando!</p>
                 <div className="flex gap-8">
                     <button className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white" onClick={() => handleJoinCall(ongoingCall)}><MdCall size={24} /></button>
                     <button className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white" onClick={() => handleHangup({ ongoingCall })}><MdCallEnd size={24} /></button>
