@@ -20,8 +20,8 @@ const NavBar = () => {
                 <div className="flex gap-3 items-center">
                     <UserButton afterSignOutUrl="/" />
                     {!userId && <>
-                        <Button onClick={() => router.push('/sign-in')} variant='outline' size='sm'>Sign in</Button>
-                        <Button onClick={() => router.push('/sign-up')} size='sm'>Sign up</Button>
+                        <Button onClick={() => router.push('/sign-in')} variant='default' size='sm'>Entrar</Button>
+                        <Button onClick={() => router.push('/sign-up')} variant='default' size='sm'>Cadastro</Button>
                     </>}
                 </div>
             </div>
